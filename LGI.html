@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>Login Page</title>
+    <link rel=”stylesheet” href=”style.css”>
+</head>
+<style>
+
+Body {
+    Font-family: Arial, sans-serif;
+    Background-color: #f0f0f0;
+}
+
+.container {
+    Width: 300px;
+    Margin: 50px auto;
+    Padding: 20px;
+    Background-color: #fff;
+    Border: 1px solid #ddd;
+    Border-radius: 10px;
+    Box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+Input[type=”text”], input[type=”password”], input[type=”email”] {
+    Width: 100%;
+    Height: 40px;
+    Margin-bottom: 20px;
+    Padding: 10px;
+    Border: 1px solid #ccc;
+    Border-radius: 5px;
+}
+
+Button {
+    Width: 100%;
+    Height: 40px;
+    Background-color: #4CAF50;
+    Color: #fff;
+    Border: none;
+    Border-radius: 5px;
+    Cursor: pointer;
+}
+
+Button:hover {
+    Background-color: #3e8e41;
+}
+
+#signup-link, #login-link {
+    Color: #4CAF50;
+    Cursor: pointer;
+}
+
+</style>
+<body>
+    <div class=”container”>
+        <h1 id=”title”>Login</h1>
+        <form id=”login-form”>
+            <input type=”text” id=”username” placeholder=”Username”>
+            <input type=”password” id=”password” placeholder=”Password”>
+            <button id=”login-btn”>Login</button>
+            <p>Don’t have an account? <span id=”signup-link”>Sign up</span></p>
+        </form>
+        <form id=”signup-form” style=”display: none;”>
+            <input type=”text” id=”new-username” placeholder=”Username”>
+            <input type=”email” id=”email” placeholder=”Email”>
+            <input type=”password” id=”new-password” placeholder=”Password”>
+            <button id=”signup-btn”>Sign up</button>
+            <p>Already have an account? <span id=”login-link”>Login</span></p>
+        </form>
+    </div>
+
+    <script src=”script.js”></script>
+</body>
+<script>
+    
+</script>
+</html>
+
